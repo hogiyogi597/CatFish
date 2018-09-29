@@ -21,12 +21,13 @@ GameObject:
   - component: {fileID: 4826378515245992}
   - component: {fileID: 114448840097404474}
   - component: {fileID: 114120206416209226}
+  - component: {fileID: 114944498661884656}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4826378515245992
 Transform:
@@ -52,9 +53,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56287ff902a94c47b2180db5171d969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneLoadDelay: 3
+  sceneLoadDelay: 2
   sceneFadeOverlay: {fileID: 0}
-  sceneFadeDuration: 0
+  sceneFadeDuration: 1
 --- !u!114 &114448840097404474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -67,7 +68,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraFollow: {fileID: 0}
-  cat: {fileID: 1504129322598360, guid: 26b8cc63f8690bb4e95d2a56e436385c, type: 2}
-  fish: {fileID: 1153861207207308, guid: e046b2c23d9ac72429803a575d559ce0, type: 2}
+  cat: {fileID: 0}
+  fish: {fileID: 0}
   switchCharacter: 102
   switchCharacterAlt: 305
+--- !u!114 &114944498661884656
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1502864496434208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a8cf69337a2094f8ca73c56e08cea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathPoint: 100
+  collectiblePoint: 150
+  scoreUI: {fileID: 0}

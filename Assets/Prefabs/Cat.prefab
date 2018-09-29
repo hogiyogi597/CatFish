@@ -84,7 +84,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
+  m_Mass: 5.3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpKey: 32
   speed: 0.17
-  jumpHeight: 13
+  jumpHeight: 35
   playerSpriteRenderer: {fileID: 212740949851864424}
   jumpCount: 1
 --- !u!212 &212740949851864424

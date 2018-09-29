@@ -3,29 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PlayerInteraction : MonoBehaviour
+namespace CatFish
 {
-
-    public string playerTag = "Player";
-
-    public UnityEvent playerInteractionEvent;
-
-    public bool continuousInteraction = false;
-
-
-    public void OnTriggerEnter2D(Collider2D other)
+    public class PlayerInteraction : MonoBehaviour
     {
-        if (other.CompareTag(playerTag))
+
+        public string playerTag = "Player";
+
+        public UnityEvent playerInteractionEvent;
+
+        public bool continuousInteraction = false;
+
+
+        public void OnTriggerEnter2D(Collider2D other)
         {
-            playerInteractionEvent.Invoke();
+            if (other.CompareTag(playerTag))
+            {
+                playerInteractionEvent.Invoke();
+            }
         }
-    }
 
-    public void OnTriggerStay2D(Collider2D other)
-    {
-        if (continuousInteraction && other.CompareTag(playerTag))
+        public void OnTriggerStay2D(Collider2D other)
         {
-            playerInteractionEvent.Invoke();
+            if (continuousInteraction && other.CompareTag(playerTag))
+            {
+                playerInteractionEvent.Invoke();
+            }
         }
     }
 }
