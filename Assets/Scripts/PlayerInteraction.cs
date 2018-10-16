@@ -12,6 +12,8 @@ namespace CatFish
 
         public UnityEvent playerInteractionEvent;
 
+        public UnityEvent playerInteractionExitEvent;
+
         public bool continuousInteraction = false;
 
 
@@ -28,6 +30,14 @@ namespace CatFish
             if (continuousInteraction && other.CompareTag(playerTag))
             {
                 playerInteractionEvent.Invoke();
+            }
+        }
+
+        public void OnTriggerExit2D(Collider2D other)
+        {
+            if (other.CompareTag(playerTag))
+            {
+                playerInteractionExitEvent.Invoke();
             }
         }
     }
