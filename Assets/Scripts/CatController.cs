@@ -31,7 +31,6 @@ namespace CatFish
 
         protected override void Jump()
         {
-            Debug.Log(Input.GetKeyDown(jumpKey));
             if (jumpCount > 0)
             {
                 jumpStart = transform.position;

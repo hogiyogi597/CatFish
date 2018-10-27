@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
+using System;
 
 namespace CatFish
 {
@@ -9,7 +11,7 @@ namespace CatFish
         [Header("Positions")]
         public float displacement;
         public Utils.Direction startDirection;
-        public float timeFrame = 2f;
+        public float timeFrame;
 
         [Header("Orientation")]
         public Utils.Orientation orientation;
@@ -34,7 +36,9 @@ namespace CatFish
             {
                 return;
             }
-            float temp = offset + Mathf.Sin(Time.time * timeFrame) * displacement * startDirectionMultiplier;
+            float sine = Mathf.Sin(Time.time * timeFrame);
+            float temp = offset + sine * displacement * startDirectionMultiplier;
+
             switch (orientation)
             {
                 case Utils.Orientation.X:

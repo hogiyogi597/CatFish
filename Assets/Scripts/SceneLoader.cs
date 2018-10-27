@@ -19,9 +19,22 @@ namespace CatFish
             if (sceneFadeOverlay != null) sceneFadeOverlay.alpha = 0f;
         }
 
+        void Update()
+        {
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                LoadScene("Menu - Title Page");
+            }
+        }
+
         public void LoadScene(string scene)
         {
             StartCoroutine(LoadSceneDelay(scene));
+        }
+
+        public void ExitGame()
+        {
+            Application.Quit();
         }
 
         public void RestartScene()
