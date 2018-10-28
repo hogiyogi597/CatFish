@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 4037543274103568}
   - component: {fileID: 61842552258390036}
   - component: {fileID: 50157423509164910}
-  - component: {fileID: 114038927249629982}
+  - component: {fileID: 114402669571115782}
   m_Layer: 0
   m_Name: SightLineEnemy
   m_TagString: Untagged
@@ -233,7 +233,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3526192, y: 2.8598557}
   m_EdgeRadius: 0
---- !u!114 &114038927249629982
+--- !u!114 &114402669571115782
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -241,13 +241,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1572157143028504}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1040c0b4b3a88a4498de4d658792b63, type: 3}
+  m_Script: {fileID: 11500000, guid: c121533bc76d93640adc8ba689b4a1c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displacement: 5
-  startDirection: 3
-  timeFrame: 1
-  orientation: 0
+  speed: 5
+  offset: 10
 --- !u!114 &114473111326182646
 MonoBehaviour:
   m_ObjectHideFlags: 1
