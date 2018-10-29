@@ -1658,11 +1658,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114944498661884656, guid: f919b976e3d133e4faee3cb715fb8158,
-        type: 2}
-      propertyPath: scoreUI
-      value: 
-      objectReference: {fileID: 1157369995}
     - target: {fileID: 114448840097404474, guid: f919b976e3d133e4faee3cb715fb8158,
         type: 2}
       propertyPath: cameraFollow
@@ -1683,6 +1678,11 @@ Prefab:
       propertyPath: sceneFadeOverlay
       value: 
       objectReference: {fileID: 579593761}
+    - target: {fileID: 114944498661884656, guid: f919b976e3d133e4faee3cb715fb8158,
+        type: 2}
+      propertyPath: scoreUI
+      value: 
+      objectReference: {fileID: 1157369995}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f919b976e3d133e4faee3cb715fb8158, type: 2}
   m_IsPrefabAsset: 0
@@ -5837,28 +5837,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2022971239 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1502864496434208, guid: f919b976e3d133e4faee3cb715fb8158,
-    type: 2}
-  m_PrefabInternal: {fileID: 86452747}
 --- !u!114 &2022971240 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114944498661884656, guid: f919b976e3d133e4faee3cb715fb8158,
     type: 2}
   m_PrefabInternal: {fileID: 86452747}
   m_Script: {fileID: 11500000, guid: 34a8cf69337a2094f8ca73c56e08cea7, type: 3}
---- !u!114 &2022971241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2022971239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e15d4b10212864249be0185f3d1b46bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &2044910134 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224106808992266436, guid: 5009f320063536f46b1b5530051beac3,

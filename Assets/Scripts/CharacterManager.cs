@@ -12,6 +12,11 @@ namespace CatFish
         public GameObject cat;
         public GameObject fish;
 
+        [Header("Sounds")]
+        public AudioSource source;
+        public AudioClip fishSound;
+        public AudioClip catSound;
+
         [Header("Controls")]
         public KeyCode switchCharacter = KeyCode.F;
         public KeyCode switchCharacterAlt = KeyCode.RightControl;
@@ -36,12 +41,14 @@ namespace CatFish
         {
             if (cameraFollow.followTransform == cat.transform)
             {
+                source.PlayOneShot(fishSound);
                 cat.GetComponentInChildren<Controller>().Freeze(true);
                 fish.GetComponentInChildren<Controller>().Freeze(false);
                 cameraFollow.followTransform = fish.transform;
             }
             else
             {
+                source.PlayOneShot(catSound);
                 cat.GetComponentInChildren<Controller>().Freeze(false);
                 fish.GetComponentInChildren<Controller>().Freeze(true);
                 cameraFollow.followTransform = cat.transform;
