@@ -17,7 +17,7 @@ TagManager:
   - 
   - 
   - Terrain
-  - 
+  - Background and Art
   - 
   - 
   - 
@@ -41,6 +41,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackGround
+    uniqueID: 2993745447
+    locked: 0
+  - name: MidGround
+    uniqueID: 1743105443
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 4204645955
     locked: 0
