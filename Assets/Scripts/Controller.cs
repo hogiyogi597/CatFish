@@ -24,10 +24,12 @@ namespace CatFish
         public SpriteRenderer playerSpriteRenderer;
         protected bool facingRight = true;
 
-        // Use this for initialization
-        void Start()
-        {
+        protected Animator animator;
 
+        // Use this for initialization
+        protected void Start()
+        {
+            animator = this.GetComponent<Animator>();
         }
 
         // Update is called once per frame
@@ -48,8 +50,8 @@ namespace CatFish
         protected void Move()
         {
             float horizontalInput = Input.GetAxis("Horizontal");
-
             this.transform.Translate(new Vector2(horizontalInput, 0) * speed);
+            animator.SetFloat("speed", Mathf.Abs(horizontalInput));
             if (horizontalInput < 0)
             {
                 facingRight = false;

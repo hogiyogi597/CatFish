@@ -19,6 +19,7 @@ namespace CatFish
         // Use this for initialization
         void Start()
         {
+            base.Start();
             playerBody = this.GetComponent<Rigidbody2D>();
             playerSpriteRenderer = this.GetComponentInChildren<SpriteRenderer>();
         }
@@ -36,12 +37,13 @@ namespace CatFish
                 jumpStart = transform.position;
                 ResetJump(0);
                 playerBody.AddForce(new Vector2(wallJumpAngle.normalized.x, jumpHeight), ForceMode2D.Impulse);
+                animator.SetBool("isJumping", true);
             }
         }
 
         private void ResetJump()
         {
-            jumpCount = 1;
+            ResetJump(1);
         }
 
         private void ResetJump(int newVal)
@@ -57,7 +59,7 @@ namespace CatFish
                 grounded = true;
                 ResetJump();
                 lastWallJumped = null;
-
+                animator.SetBool("isJumping", false);
             }
             if (collision.gameObject.tag == "Wall")
             {
@@ -68,6 +70,7 @@ namespace CatFish
                 wallJumpAngle = -1 * (transform.position - jumpStart);
                 ResetJump();
                 lastWallJumped = collision.gameObject;
+                animator.SetBool("isJumping", false);
             }
         }
 

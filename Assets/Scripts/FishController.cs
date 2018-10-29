@@ -11,6 +11,7 @@ namespace CatFish
         // Use this for initialization
         void Start()
         {
+            base.Start();
             playerBody = this.GetComponent<Rigidbody2D>();
             playerSpriteRenderer = this.GetComponentInChildren<SpriteRenderer>();
             Freeze(true);
