@@ -30,7 +30,7 @@ public class EnemyController : MonoBehaviour {
     {
         int directionModifier = facingRight ? 1 : -1;
         float updatedX = speed * Time.deltaTime * directionModifier;
-        this.transform.Translate(new Vector2(updatedX, 0) * speed);
+        this.transform.Translate(new Vector2(updatedX, 0));
         if (this.transform.position.x <= minX)
         {
             facingRight = true;
