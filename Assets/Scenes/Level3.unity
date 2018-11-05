@@ -1652,7 +1652,7 @@ GameObject:
   - component: {fileID: 325161260}
   - component: {fileID: 325161259}
   m_Layer: 8
-  m_Name: StaticWall (1)
+  m_Name: WallJump2
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1670,7 +1670,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.196024}
+  m_Offset: {x: 0, y: -0.21453781}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1681,7 +1681,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.5625779}
+  m_Size: {x: 1, y: 0.5255502}
   m_EdgeRadius: 0.1
 --- !u!4 &325161260
 Transform:
@@ -1690,8 +1690,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 325161258}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.52, y: 8.32, z: 0}
-  m_LocalScale: {x: 1, y: 14.590349, z: 1}
+  m_LocalPosition: {x: 4.51, y: 8, z: 0}
+  m_LocalScale: {x: 1, y: 9.301348, z: 1}
   m_Children:
   - {fileID: 90289053}
   m_Father: {fileID: 0}
@@ -3281,7 +3281,7 @@ GameObject:
   - component: {fileID: 1341221555}
   - component: {fileID: 1341221554}
   m_Layer: 8
-  m_Name: StaticWall (2)
+  m_Name: WallJump1
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3319,8 +3319,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1341221553}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.46, y: 5.91, z: 0}
-  m_LocalScale: {x: 1, y: 21.862978, z: 1}
+  m_LocalPosition: {x: 10.5, y: 4.0939, z: 0}
+  m_LocalScale: {x: 1, y: 12.844499, z: 1}
   m_Children:
   - {fileID: 833012003}
   m_Father: {fileID: 0}
@@ -3350,8 +3350,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1346156200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.88, y: -0.21, z: 0}
-  m_LocalScale: {x: 4.0468726, y: 0.82500005, z: 1}
+  m_LocalPosition: {x: 2.69, y: 0.33, z: 0}
+  m_LocalScale: {x: 4.0468726, y: 1.8665626, z: 1}
   m_Children: []
   m_Father: {fileID: 689836890}
   m_RootOrder: 0
@@ -6656,7 +6656,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.6266706, y: -0.24772891}
+  m_Offset: {x: 1.6266706, y: -0.0065146983}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6667,7 +6667,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.1226382, y: 0.82062465}
+  m_Size: {x: 2.1226382, y: 1.3030531}
   m_EdgeRadius: 0.1
 --- !u!4 &2021699059
 Transform:
