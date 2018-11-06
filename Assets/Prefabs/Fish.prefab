@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpKey: 32
   speed: 0.1
-  jumpHeight: 2
+  jumpHeight: 3
   playerSpriteRenderer: {fileID: 0}
 --- !u!212 &212289097388619368
 SpriteRenderer:
