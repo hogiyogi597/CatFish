@@ -3946,7 +3946,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1032081823197278, guid: 5009f320063536f46b1b5530051beac3,
     type: 2}
   m_PrefabInternal: {fileID: 1157369994}
---- !u!114 &217420491
+--- !u!114 &217420494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20846,7 +20846,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4875858472702800, guid: bfac55be3d45ae94ca4f293551404c7d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 10.78
+      value: 10.87
       objectReference: {fileID: 0}
     - target: {fileID: 4875858472702800, guid: bfac55be3d45ae94ca4f293551404c7d, type: 2}
       propertyPath: m_LocalPosition.y
