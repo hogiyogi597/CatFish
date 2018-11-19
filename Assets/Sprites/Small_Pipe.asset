@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Middle full pipe
+  m_Name: Small_Pipe
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 530bbd5acefba0e4eb924dc520105ffd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e3b23b9da4fbb334e866723d3a0a10c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
