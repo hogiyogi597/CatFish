@@ -181,7 +181,7 @@ MonoBehaviour:
   fish: {fileID: 0}
   source: {fileID: 82306693749267858}
   fishSound: {fileID: 8300000, guid: 9f8681a6f740327448d49aa6942b09f9, type: 3}
-  catSound: {fileID: 8300000, guid: 8101ddc7a430820468328d262889b080, type: 3}
+  catSound: {fileID: 8300000, guid: cf4e5263caf4acc42bebd44917d0a98b, type: 3}
   switchCharacter: 102
   switchCharacterAlt: 305
 --- !u!114 &114782722954213120
@@ -209,3 +209,5 @@ MonoBehaviour:
   deathPoint: 100
   collectiblePoint: 150
   scoreUI: {fileID: 0}
+  source: {fileID: 82306693749267858}
+  deathSound: {fileID: 8300000, guid: 9283ae25eadf1d5468b0619a503d0a1b, type: 3}
