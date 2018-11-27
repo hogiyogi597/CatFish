@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SeaWeed_N3
+  m_Name: SeaWeed4
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: bc4b60e938a14ae43be277c5cdc252db, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 64a66f5d5d0d05b4ba81f23d68ffb4da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
