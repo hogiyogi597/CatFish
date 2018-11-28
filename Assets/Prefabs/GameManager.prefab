@@ -19,12 +19,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4826378515245992}
+  - component: {fileID: 82306693749267858}
   - component: {fileID: 114448840097404474}
   - component: {fileID: 114120206416209226}
   - component: {fileID: 114944498661884656}
   - component: {fileID: 114071320146347182}
-  - component: {fileID: 82306693749267858}
-  - component: {fileID: 114782722954213120}
+  - component: {fileID: 114796281204733366}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -182,9 +182,11 @@ MonoBehaviour:
   source: {fileID: 82306693749267858}
   fishSound: {fileID: 8300000, guid: 9f8681a6f740327448d49aa6942b09f9, type: 3}
   catSound: {fileID: 8300000, guid: cf4e5263caf4acc42bebd44917d0a98b, type: 3}
+  catDeathSound: {fileID: 8300000, guid: 9283ae25eadf1d5468b0619a503d0a1b, type: 3}
+  fishDeathSound: {fileID: 8300000, guid: 9f8681a6f740327448d49aa6942b09f9, type: 3}
   switchCharacter: 102
   switchCharacterAlt: 305
---- !u!114 &114782722954213120
+--- !u!114 &114796281204733366
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,9 +194,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1502864496434208}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e15d4b10212864249be0185f3d1b46bb, type: 3}
+  m_Script: {fileID: 11500000, guid: a6811b2b518853a4b9cd5d084e43b7b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pawPrefab: {fileID: 1780456242260206, guid: 83a5b4f25478e594ebea04e23f41cab2, type: 2}
 --- !u!114 &114944498661884656
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -209,5 +212,3 @@ MonoBehaviour:
   deathPoint: 100
   collectiblePoint: 150
   scoreUI: {fileID: 0}
-  source: {fileID: 82306693749267858}
-  deathSound: {fileID: 8300000, guid: 9283ae25eadf1d5468b0619a503d0a1b, type: 3}

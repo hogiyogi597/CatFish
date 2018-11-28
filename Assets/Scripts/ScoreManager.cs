@@ -17,9 +17,6 @@ namespace CatFish
         [Header("Text Object")]
         public Text scoreUI;
 
-        [Header("Sounds")]
-        public AudioSource source;
-        public AudioClip deathSound;        
 
         // Use this for initialization
         void Awake()
@@ -46,7 +43,6 @@ namespace CatFish
 
         public void Died()
         {
-            source.PlayOneShot(deathSound);
             totalScore -= deathPoint;
         }
     }

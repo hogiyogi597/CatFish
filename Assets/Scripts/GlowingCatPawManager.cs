@@ -12,6 +12,7 @@ public class GlowingCatPawManager : MonoBehaviour {
         {
             Vector3 newPos = wall.transform.position;
             newPos.z = -5;
+            //newPos.y = -1;
             GameObject catPaw = Instantiate(pawPrefab, newPos, wall.transform.rotation);
             //catPaw.transform.SetParent(wall.transform);
             catPaw.GetComponent<GlowingCatPaw>().Initialize(wall.transform);
