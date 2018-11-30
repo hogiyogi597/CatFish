@@ -5026,11 +5026,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4819090819880060, guid: 2a7974961addff349bb6dc41fb35d75d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 36.7
+      value: 45.82
       objectReference: {fileID: 0}
     - target: {fileID: 4819090819880060, guid: 2a7974961addff349bb6dc41fb35d75d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 9.8
+      value: 9.08
       objectReference: {fileID: 0}
     - target: {fileID: 4819090819880060, guid: 2a7974961addff349bb6dc41fb35d75d, type: 2}
       propertyPath: m_LocalPosition.z
