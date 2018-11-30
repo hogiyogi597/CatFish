@@ -16,6 +16,8 @@ namespace CatFish
         public AudioSource source;
         public AudioClip fishSound;
         public AudioClip catSound;
+        public AudioClip catDeathSound;
+        public AudioClip fishDeathSound;
 
         [Header("Controls")]
         public KeyCode switchCharacter = KeyCode.F;
@@ -53,6 +55,24 @@ namespace CatFish
                 fish.GetComponentInChildren<Controller>().Freeze(true);
                 cameraFollow.followTransform = cat.transform;
             }
+        }
+
+        public void Died()
+        {
+            if (cameraFollow.transform == cat.transform)
+                CatDied();
+            else
+                FishDied();
+        }
+
+        private void CatDied()
+        {
+            source.PlayOneShot(catDeathSound);
+        }
+
+        private void FishDied()
+        {
+            source.PlayOneShot(fishDeathSound);
         }
     }
 
