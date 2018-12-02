@@ -15,8 +15,8 @@ namespace CatFish
 
 	    // Use this for initialization
 	    void Start () {
-            catController = GameObject.Find("Cat").GetComponent<CatController>();
-            fishController = GameObject.Find("Fish").GetComponent<FishController>();
+            catController = FindObjectOfType<CatController>();
+            fishController = FindObjectOfType<FishController>();
             GameObject gameManager = GameObject.Find("GameManager");
             sceneLoader = gameManager.GetComponent<SceneLoader>();
             scoreManager = gameManager.GetComponent<ScoreManager>();
