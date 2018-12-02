@@ -29,6 +29,7 @@ namespace CatFish
         // Use this for initialization
         protected void Start()
         {
+            playerBody = this.GetComponent<Rigidbody2D>();
             animator = this.GetComponent<Animator>();
         }
 
@@ -47,11 +48,12 @@ namespace CatFish
 
         }
 
-        protected void Move()
+        protected virtual void Move()
         {
             float horizontalInput = Input.GetAxis("Horizontal");
             this.transform.Translate(new Vector2(horizontalInput, 0) * speed);
             animator.SetFloat("speed", Mathf.Abs(horizontalInput));
+            //playerBody.velocity = new Vector3(, playerBody.velocity.y, 0);
             if (horizontalInput < 0)
             {
                 facingRight = false;

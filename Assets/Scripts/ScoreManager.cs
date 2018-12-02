@@ -43,6 +43,7 @@ namespace CatFish
 
         public void Died()
         {
+            
             totalScore -= deathPoint;
         }
     }

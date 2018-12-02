@@ -59,7 +59,7 @@ namespace CatFish
 
         public void Died()
         {
-            if (cameraFollow.transform == cat.transform)
+            if (cameraFollow.followTransform == cat.transform)
                 CatDied();
             else
                 FishDied();
