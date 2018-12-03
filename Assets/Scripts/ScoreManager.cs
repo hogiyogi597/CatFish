@@ -17,6 +17,9 @@ namespace CatFish
         [Header("Text Object")]
         public Text scoreUI;
 
+        [Header("Sounds")]
+        public AudioClip collectible;
+        private AudioManager audio;
 
         // Use this for initialization
         void Awake()
@@ -27,6 +30,7 @@ namespace CatFish
             }
             // Assign the high score to HighScore
             PlayerPrefs.SetInt("Score", totalScore);
+            audio = GetComponent<AudioManager>();
         }
 
         // Update is called once per frame
@@ -38,6 +42,7 @@ namespace CatFish
 
         public void CollectedItem()
         {
+            audio.PlaySound(collectible);
             totalScore += collectiblePoint;
         }
 

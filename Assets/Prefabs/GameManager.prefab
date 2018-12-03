@@ -310,3 +310,4 @@ MonoBehaviour:
   deathPoint: 100
   collectiblePoint: 150
   scoreUI: {fileID: 0}
+  collectible: {fileID: 8300000, guid: 5c0429b7e8649204faeea6a4357ccb13, type: 3}
