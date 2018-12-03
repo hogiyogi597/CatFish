@@ -7,7 +7,6 @@ namespace CatFish
     [RequireComponent(typeof(Rigidbody2D))]
     public class CatController : Controller
     {
-
         [Range(1, 2)]
         public int jumpCount = 1;
         public Vector2 wallJump;
@@ -59,6 +58,7 @@ namespace CatFish
         {
             if (jumpCount > 0)
             {
+                audio.PlaySound(jumpSound);
                 jumpStart = transform.position;
                 if(!grounded)
                 {

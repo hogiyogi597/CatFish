@@ -25,6 +25,7 @@ namespace CatFish
 
         protected override void Jump()
         {
+            audio.PlaySound(jumpSound);
             playerBody.AddForce(new Vector2(0, jumpHeight), ForceMode2D.Impulse);
         }
     }

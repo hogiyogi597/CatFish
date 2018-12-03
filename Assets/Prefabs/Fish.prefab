@@ -171,7 +171,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1153861207207308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.268, y: -9.035, z: 0}
+  m_LocalPosition: {x: 0, y: -8.88, z: 0}
   m_LocalScale: {x: 0.10530001, y: 0.1155, z: 0.15}
   m_Children:
   - {fileID: 4138015251259510}
@@ -369,7 +369,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: 0.9650626, b: 0.5707547, a: 1}
   m_Intensity: 6
-  m_Range: 6
+  m_Range: 7
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -409,6 +409,7 @@ MonoBehaviour:
   jumpKey: 32
   speed: 0.1
   jumpHeight: 3
+  jumpSound: {fileID: 8300000, guid: 78d2b0eed3538be489eaa0bbea327d70, type: 3}
   playerSpriteRenderer: {fileID: 0}
 --- !u!198 &198239844336471556
 ParticleSystem:

@@ -23,20 +23,29 @@ namespace CatFish
         public KeyCode switchCharacter = KeyCode.F;
         public KeyCode switchCharacterAlt = KeyCode.RightControl;
 
+
+        private bool canSwitch;
+
         // Use this for initialization
         void Start()
         {
+            canSwitch = true;
             cameraFollow.followTransform = cat.transform;
         }
 
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown(switchCharacter) || Input.GetKeyDown(switchCharacterAlt))
+            if ((Input.GetKeyDown(switchCharacter) || Input.GetKeyDown(switchCharacterAlt)) && canSwitch)
             {
                 SwitchCharacters();
 
             }
+        }
+
+        public void ToggleSwitch()
+        {
+            canSwitch = !canSwitch;
         }
 
         private void SwitchCharacters()

@@ -17,7 +17,7 @@ public class GlowingCatPaw : MonoBehaviour {
         collider2D = this.gameObject.GetComponent<BoxCollider2D>();
         Vector2 parentCollider = parent.localScale;
         collider2D.size = new Vector2(parentCollider.x + colliderOffset, parentCollider.y + 2f * colliderOffset);
-        SetVisible(false);
+        //SetVisible(false);
         this.transform.position.Set(this.transform.position.x, -1 * parent.localScale.y, this.transform.position.z);
         //Debug.Log("parentColliderSize: " + parentCollider + " | childColliderSize: " + collider2D.size, this);
     }

@@ -15,6 +15,9 @@ namespace CatFish
         public float speed = 0.5f;
         public float jumpHeight = 10f;
 
+        [Header("Jump Sound")]
+        public AudioClip jumpSound;
+
         // movement and physics
         protected Rigidbody2D playerBody;
         protected Vector3 storedVelocity;
@@ -26,11 +29,14 @@ namespace CatFish
 
         protected Animator animator;
 
+        protected AudioManager audio;
+
         // Use this for initialization
         protected void Start()
         {
             playerBody = this.GetComponent<Rigidbody2D>();
             animator = this.GetComponent<Animator>();
+            audio = FindObjectOfType<AudioManager>();
         }
 
         // Update is called once per frame

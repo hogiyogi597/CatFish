@@ -10,7 +10,8 @@ public class GlowingCatPawManager : MonoBehaviour {
 	void Start () {
         foreach( GameObject wall in GameObject.FindGameObjectsWithTag("Wall"))
         {
-            Vector3 newPos = wall.transform.position;
+            wall.GetComponent<BoxCollider2D>();
+            Vector3 newPos = wall.GetComponent<BoxCollider2D>().transform.position;
             newPos.z = -5;
             //newPos.y = -1;
             GameObject catPaw = Instantiate(pawPrefab, newPos, wall.transform.rotation);

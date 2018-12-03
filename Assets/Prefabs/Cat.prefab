@@ -379,6 +379,7 @@ MonoBehaviour:
   jumpKey: 32
   speed: 0.17
   jumpHeight: 75
+  jumpSound: {fileID: 8300000, guid: 32e3eb0ec73339c4f8ed19830d803d2c, type: 3}
   playerSpriteRenderer: {fileID: 212740949851864424}
   jumpCount: 1
   wallJump: {x: 30, y: 70}
