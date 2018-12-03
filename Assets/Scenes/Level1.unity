@@ -25376,6 +25376,11 @@ Prefab:
       propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 86452748}
+    - target: {fileID: 114847443139029664, guid: 9eddb6e4455a42a42abb7d7512f079ca,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9eddb6e4455a42a42abb7d7512f079ca, type: 2}
   m_IsPrefabAsset: 0

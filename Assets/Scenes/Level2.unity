@@ -12024,6 +12024,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114847443139029664, guid: 9eddb6e4455a42a42abb7d7512f079ca,
+        type: 2}
+      propertyPath: playerInteractionExitEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4287200216234662, guid: 9eddb6e4455a42a42abb7d7512f079ca, type: 2}
       propertyPath: m_LocalPosition.x
       value: 44
@@ -12055,6 +12060,27 @@ Prefab:
     - target: {fileID: 4287200216234662, guid: 9eddb6e4455a42a42abb7d7512f079ca, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114847443139029664, guid: 9eddb6e4455a42a42abb7d7512f079ca,
+        type: 2}
+      propertyPath: playerInteractionExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114847443139029664, guid: 9eddb6e4455a42a42abb7d7512f079ca,
+        type: 2}
+      propertyPath: playerInteractionExitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114847443139029664, guid: 9eddb6e4455a42a42abb7d7512f079ca,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: e56287ff902a94c47b2180db5171d969,
+        type: 3}
+    - target: {fileID: 114847443139029664, guid: 9eddb6e4455a42a42abb7d7512f079ca,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_name
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9eddb6e4455a42a42abb7d7512f079ca, type: 2}
