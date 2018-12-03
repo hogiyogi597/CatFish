@@ -19,7 +19,7 @@ namespace CatFish
 
         [Header("Sounds")]
         public AudioClip collectible;
-        private AudioManager audio;
+        private AudioManager audioSource;
 
         // Use this for initialization
         void Awake()
@@ -30,7 +30,7 @@ namespace CatFish
             }
             // Assign the high score to HighScore
             PlayerPrefs.SetInt("Score", totalScore);
-            audio = GetComponent<AudioManager>();
+            audioSource = GetComponent<AudioManager>();
         }
 
         // Update is called once per frame
@@ -42,7 +42,8 @@ namespace CatFish
 
         public void CollectedItem()
         {
-            audio.PlaySound(collectible);
+            Debug.Log("picked up item");
+            audioSource.PlaySound(collectible);
             totalScore += collectiblePoint;
         }
 
