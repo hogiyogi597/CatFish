@@ -152,6 +152,7 @@ namespace CatFish
             if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "MovingPlatform")
             {
                 grounded = true;
+                ResetJump();
             }
             if (collision.gameObject.tag == "Wall" && lastWallJumped != null && lastWallJumped.Equals(collision.gameObject))
             {

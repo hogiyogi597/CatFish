@@ -2365,6 +2365,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 86452747}
   m_Script: {fileID: 11500000, guid: e56287ff902a94c47b2180db5171d969, type: 3}
+--- !u!114 &86452749 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114944498661884656, guid: f919b976e3d133e4faee3cb715fb8158,
+    type: 2}
+  m_PrefabInternal: {fileID: 86452747}
+  m_Script: {fileID: 11500000, guid: 34a8cf69337a2094f8ca73c56e08cea7, type: 3}
 --- !u!1 &90289052
 GameObject:
   m_ObjectHideFlags: 0
@@ -9884,7 +9890,7 @@ Prefab:
     - target: {fileID: 114127343448358520, guid: 9133e0c45644b8442afded4accbd8803,
         type: 2}
       propertyPath: pushDirection
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114127343448358520, guid: 9133e0c45644b8442afded4accbd8803,
         type: 2}
@@ -10026,6 +10032,16 @@ Prefab:
     - target: {fileID: 1133878432036528, guid: 5743240c2df8a704dbebedf316938deb, type: 2}
       propertyPath: m_Name
       value: FishCollectible (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114307535099309168, guid: 5743240c2df8a704dbebedf316938deb,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 86452749}
+    - target: {fileID: 114307535099309168, guid: 5743240c2df8a704dbebedf316938deb,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CollectedItem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5743240c2df8a704dbebedf316938deb, type: 2}
@@ -10560,6 +10576,26 @@ Prefab:
     - target: {fileID: 1041952132817770, guid: cd47a7a59baa69146b28bf1a009f0d7e, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61778289345417022, guid: cd47a7a59baa69146b28bf1a009f0d7e,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.124982834
+      objectReference: {fileID: 0}
+    - target: {fileID: 61778289345417022, guid: cd47a7a59baa69146b28bf1a009f0d7e,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.75003433
+      objectReference: {fileID: 0}
+    - target: {fileID: 61778289345417022, guid: cd47a7a59baa69146b28bf1a009f0d7e,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.003675744
+      objectReference: {fileID: 0}
+    - target: {fileID: 61778289345417022, guid: cd47a7a59baa69146b28bf1a009f0d7e,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.9558884
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd47a7a59baa69146b28bf1a009f0d7e, type: 2}
@@ -24596,6 +24632,16 @@ Prefab:
       propertyPath: m_Name
       value: CatCollectible (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114703492340203842, guid: 3b5b9fe071e17cb4c8f5c03bf52eb76e,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 86452749}
+    - target: {fileID: 114703492340203842, guid: 3b5b9fe071e17cb4c8f5c03bf52eb76e,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CollectedItem
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b5b9fe071e17cb4c8f5c03bf52eb76e, type: 2}
   m_IsPrefabAsset: 0
@@ -25875,6 +25921,16 @@ Prefab:
     - target: {fileID: 4656222784066546, guid: 3b5b9fe071e17cb4c8f5c03bf52eb76e, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114703492340203842, guid: 3b5b9fe071e17cb4c8f5c03bf52eb76e,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 86452749}
+    - target: {fileID: 114703492340203842, guid: 3b5b9fe071e17cb4c8f5c03bf52eb76e,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CollectedItem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b5b9fe071e17cb4c8f5c03bf52eb76e, type: 2}
@@ -27633,6 +27689,16 @@ Prefab:
       propertyPath: m_Name
       value: FishCollectible (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114307535099309168, guid: 5743240c2df8a704dbebedf316938deb,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 86452749}
+    - target: {fileID: 114307535099309168, guid: 5743240c2df8a704dbebedf316938deb,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CollectedItem
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5743240c2df8a704dbebedf316938deb, type: 2}
   m_IsPrefabAsset: 0
@@ -27782,6 +27848,16 @@ Prefab:
     - target: {fileID: 1763598555358024, guid: 3b5b9fe071e17cb4c8f5c03bf52eb76e, type: 2}
       propertyPath: m_Name
       value: CatCollectible (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114703492340203842, guid: 3b5b9fe071e17cb4c8f5c03bf52eb76e,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 86452749}
+    - target: {fileID: 114703492340203842, guid: 3b5b9fe071e17cb4c8f5c03bf52eb76e,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CollectedItem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b5b9fe071e17cb4c8f5c03bf52eb76e, type: 2}
@@ -27965,6 +28041,16 @@ Prefab:
       propertyPath: m_Name
       value: CatCollectible (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114703492340203842, guid: 3b5b9fe071e17cb4c8f5c03bf52eb76e,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 86452749}
+    - target: {fileID: 114703492340203842, guid: 3b5b9fe071e17cb4c8f5c03bf52eb76e,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CollectedItem
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b5b9fe071e17cb4c8f5c03bf52eb76e, type: 2}
   m_IsPrefabAsset: 0
@@ -27992,7 +28078,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1711419728}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1366358414}
@@ -29842,6 +29928,26 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 61778289345417022, guid: cd47a7a59baa69146b28bf1a009f0d7e,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.15622804
+      objectReference: {fileID: 0}
+    - target: {fileID: 61778289345417022, guid: cd47a7a59baa69146b28bf1a009f0d7e,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.6875439
+      objectReference: {fileID: 0}
+    - target: {fileID: 61778289345417022, guid: cd47a7a59baa69146b28bf1a009f0d7e,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.008205265
+      objectReference: {fileID: 0}
+    - target: {fileID: 61778289345417022, guid: cd47a7a59baa69146b28bf1a009f0d7e,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.9835895
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd47a7a59baa69146b28bf1a009f0d7e, type: 2}
   m_IsPrefabAsset: 0
@@ -29888,12 +29994,11 @@ Prefab:
         type: 2}
       propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1133878432036528, guid: 5743240c2df8a704dbebedf316938deb,
-        type: 2}
+      objectReference: {fileID: 86452749}
     - target: {fileID: 114307535099309168, guid: 5743240c2df8a704dbebedf316938deb,
         type: 2}
       propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: CollectedItem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5743240c2df8a704dbebedf316938deb, type: 2}
