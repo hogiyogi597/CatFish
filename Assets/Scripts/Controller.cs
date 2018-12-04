@@ -42,7 +42,12 @@ namespace CatFish
         // Update is called once per frame
         protected void Update()
         {
-            if (isFrozen) return;
+            if (isFrozen)
+            {
+                //this.transform.Translate(this.transform.position);
+                playerBody.velocity = Vector2.zero;
+                return;
+            }
             Animate();
             Move();
             if (Input.GetKeyDown(jumpKey)) Jump();

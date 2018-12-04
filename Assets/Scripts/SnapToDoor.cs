@@ -25,6 +25,7 @@ namespace CatFish
 
         private IEnumerator PlayCinematic(Transform door)
         {
+            manager.FreezeCharacter(true);
             manager.ToggleSwitch();
             returnTransform = cameraFollow.followTransform;
             cameraFollow.followTransform = door;
@@ -32,6 +33,7 @@ namespace CatFish
             show = false;
             cameraFollow.followTransform = returnTransform;
             manager.ToggleSwitch();
+            manager.FreezeCharacter(false);
         }
 
         public void SnapTo(Transform door)

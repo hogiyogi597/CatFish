@@ -43,6 +43,18 @@ namespace CatFish
             }
         }
 
+        public void FreezeCharacter(bool flag)
+        {
+            if (cameraFollow.followTransform == cat.transform)
+            {
+                cat.GetComponentInChildren<Controller>().Freeze(flag);
+            }
+            else
+            {
+                fish.GetComponentInChildren<Controller>().Freeze(flag);
+            }
+        }
+
         public void ToggleSwitch()
         {
             canSwitch = !canSwitch;
