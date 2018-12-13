@@ -737,6 +737,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 56491862}
+  - component: {fileID: 56491865}
   - component: {fileID: 56491864}
   - component: {fileID: 56491863}
   m_Layer: 9
@@ -791,8 +792,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1743105443
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -2129,6 +2130,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!65 &56491865
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 56491861}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.33, y: 34.2, z: 0}
+  m_Center: {x: -18.6, y: 1.9200001, z: 0}
 --- !u!1 &66264914
 GameObject:
   m_ObjectHideFlags: 0
@@ -13646,6 +13659,11 @@ Prefab:
     - target: {fileID: 4280809373005794, guid: 26b8cc63f8690bb4e95d2a56e436385c, type: 2}
       propertyPath: m_RootOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 61475181479798342, guid: 26b8cc63f8690bb4e95d2a56e436385c,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 9.17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26b8cc63f8690bb4e95d2a56e436385c, type: 2}
@@ -25797,13 +25815,13 @@ Prefab:
         type: 2}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: 609d3481d810f8e4e9d5e0edf347bb2a,
+      objectReference: {fileID: 12800000, guid: bba0daba7ee32a34d8bcf5b105510c9b,
         type: 3}
     - target: {fileID: 114689491899547660, guid: 5009f320063536f46b1b5530051beac3,
         type: 2}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: 609d3481d810f8e4e9d5e0edf347bb2a,
+      objectReference: {fileID: 12800000, guid: bba0daba7ee32a34d8bcf5b105510c9b,
         type: 3}
     - target: {fileID: 224618106794971436, guid: 5009f320063536f46b1b5530051beac3,
         type: 2}
@@ -25828,17 +25846,17 @@ Prefab:
     - target: {fileID: 114208878273655486, guid: 5009f320063536f46b1b5530051beac3,
         type: 2}
       propertyPath: m_Color.r
-      value: 0.92254394
+      value: 0.8316984
       objectReference: {fileID: 0}
     - target: {fileID: 114208878273655486, guid: 5009f320063536f46b1b5530051beac3,
         type: 2}
       propertyPath: m_Color.g
-      value: 0.9716981
+      value: 0.9528302
       objectReference: {fileID: 0}
     - target: {fileID: 114208878273655486, guid: 5009f320063536f46b1b5530051beac3,
         type: 2}
       propertyPath: m_Color.b
-      value: 0.81127626
+      value: 0.57079923
       objectReference: {fileID: 0}
     - target: {fileID: 114689491899547660, guid: 5009f320063536f46b1b5530051beac3,
         type: 2}
@@ -29091,7 +29109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9847341, g: 1, b: 0.6839622, a: 1}
+  m_Color: {r: 0.83137256, g: 0.9529412, b: 0.57254905, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -29099,7 +29117,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 609d3481d810f8e4e9d5e0edf347bb2a, type: 3}
+    m_Font: {fileID: 12800000, guid: bba0daba7ee32a34d8bcf5b105510c9b, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 1
