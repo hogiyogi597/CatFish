@@ -9180,6 +9180,18 @@ Prefab:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 2022971242}
+    - target: {fileID: 114944498661884656, guid: f919b976e3d133e4faee3cb715fb8158,
+        type: 2}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 11400000, guid: 33fbc40d5c1c2104b9e78b8e2693e753,
+        type: 2}
+    - target: {fileID: 114944498661884656, guid: f919b976e3d133e4faee3cb715fb8158,
+        type: 2}
+      propertyPath: scoreboard
+      value: 
+      objectReference: {fileID: 11400000, guid: cb42d6b040b67cd4db330b740e859577,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f919b976e3d133e4faee3cb715fb8158, type: 2}
   m_IsPrefabAsset: 0
@@ -10630,11 +10642,11 @@ Prefab:
         type: 2}
       propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 86452748}
+      objectReference: {fileID: 2022971240}
     - target: {fileID: 114847443139029664, guid: 9eddb6e4455a42a42abb7d7512f079ca,
         type: 2}
       propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadScene
+      value: ShowScoreBoard
       objectReference: {fileID: 0}
     - target: {fileID: 114847443139029664, guid: 9eddb6e4455a42a42abb7d7512f079ca,
         type: 2}

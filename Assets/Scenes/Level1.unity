@@ -2369,15 +2369,21 @@ Prefab:
       propertyPath: sceneFadeOverlay
       value: 
       objectReference: {fileID: 579593761}
+    - target: {fileID: 114944498661884656, guid: f919b976e3d133e4faee3cb715fb8158,
+        type: 2}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 11400000, guid: 33fbc40d5c1c2104b9e78b8e2693e753,
+        type: 2}
+    - target: {fileID: 114944498661884656, guid: f919b976e3d133e4faee3cb715fb8158,
+        type: 2}
+      propertyPath: scoreboard
+      value: 
+      objectReference: {fileID: 11400000, guid: cb42d6b040b67cd4db330b740e859577,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f919b976e3d133e4faee3cb715fb8158, type: 2}
   m_IsPrefabAsset: 0
---- !u!114 &86452748 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114120206416209226, guid: f919b976e3d133e4faee3cb715fb8158,
-    type: 2}
-  m_PrefabInternal: {fileID: 86452747}
-  m_Script: {fileID: 11500000, guid: e56287ff902a94c47b2180db5171d969, type: 3}
 --- !u!114 &86452749 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114944498661884656, guid: f919b976e3d133e4faee3cb715fb8158,
@@ -10107,7 +10113,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 325161258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.79, y: 1, z: 0}
+  m_LocalPosition: {x: 25.93, y: 1.23, z: 0}
   m_LocalScale: {x: 1, y: 9.429732, z: 1}
   m_Children:
   - {fileID: 90289053}
@@ -14177,7 +14183,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.010649905}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -14188,7 +14194,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.88487816, y: 0.62}
+  m_Size: {x: 0.88487816, y: 0.59870017}
   m_EdgeRadius: 0
 --- !u!1 &943248279
 GameObject:
@@ -25379,6 +25385,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114847443139029664, guid: 9eddb6e4455a42a42abb7d7512f079ca,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4287200216234662, guid: 9eddb6e4455a42a42abb7d7512f079ca, type: 2}
       propertyPath: m_LocalPosition.x
       value: 26.07
@@ -25415,7 +25426,22 @@ Prefab:
         type: 2}
       propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 86452748}
+      objectReference: {fileID: 86452749}
+    - target: {fileID: 114847443139029664, guid: 9eddb6e4455a42a42abb7d7512f079ca,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114847443139029664, guid: 9eddb6e4455a42a42abb7d7512f079ca,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114847443139029664, guid: 9eddb6e4455a42a42abb7d7512f079ca,
+        type: 2}
+      propertyPath: playerInteractionEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowScoreBoard
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9eddb6e4455a42a42abb7d7512f079ca, type: 2}
   m_IsPrefabAsset: 0
@@ -25815,13 +25841,13 @@ Prefab:
         type: 2}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: bba0daba7ee32a34d8bcf5b105510c9b,
+      objectReference: {fileID: 12800000, guid: 609d3481d810f8e4e9d5e0edf347bb2a,
         type: 3}
     - target: {fileID: 114689491899547660, guid: 5009f320063536f46b1b5530051beac3,
         type: 2}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: bba0daba7ee32a34d8bcf5b105510c9b,
+      objectReference: {fileID: 12800000, guid: 609d3481d810f8e4e9d5e0edf347bb2a,
         type: 3}
     - target: {fileID: 224618106794971436, guid: 5009f320063536f46b1b5530051beac3,
         type: 2}
@@ -26061,7 +26087,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1258651418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.55, y: 3.7, z: 0}
+  m_LocalPosition: {x: 24.58, y: 3.67, z: 0}
   m_LocalScale: {x: 2.325, y: 1.0608449, z: 1}
   m_Children:
   - {fileID: 297799206}
@@ -27858,7 +27884,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.010403842}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -27869,7 +27895,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.88487816, y: 0.6835192}
+  m_Size: {x: 0.88487816, y: 0.6627115}
   m_EdgeRadius: 0
 --- !u!1 &1690547146
 GameObject:
@@ -29117,7 +29143,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: bba0daba7ee32a34d8bcf5b105510c9b, type: 3}
+    m_Font: {fileID: 12800000, guid: 609d3481d810f8e4e9d5e0edf347bb2a, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 1
