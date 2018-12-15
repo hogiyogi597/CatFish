@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dac1f6a74bc283418b77706f56fbbcb, type: 3}
   m_Name: LevelScore
   m_EditorClassIdentifier: 
-  levelScore: 1100
-  deathCount: 1
-  collectibleCount: 8
+  levelScore: 0
+  deathCount: 0
+  collectibleCount: 0

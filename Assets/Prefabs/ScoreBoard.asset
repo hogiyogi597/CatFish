@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f60e67a4127fd4842861902ad3f7f96f, type: 3}
   m_Name: ScoreBoard
   m_EditorClassIdentifier: 
-  collectiblesCount: 10
+  collectiblesCount: 5
   collectiblesWeight: 150
-  deathsCount: 3
+  deathsCount: 1
   deathsWeight: 100
-  levelName: Level1
-  nextLevelName: Level2
+  levelName: Level3
+  nextLevelName: Outro

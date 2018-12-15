@@ -6,6 +6,7 @@ using UnityEngine.Video;
 
 public class VideoPlayerManager : MonoBehaviour {
 
+    public string nextScene;
     private VideoPlayer vp;
     private AudioSource audio;
 
@@ -13,30 +14,37 @@ public class VideoPlayerManager : MonoBehaviour {
 	void Start () {
         vp = GameObject.FindObjectOfType<VideoPlayer>();
         audio = GameObject.FindObjectOfType<AudioSource>();
+        vp.loopPointReached += EndReached;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if((ulong)vp.frame == vp.frameCount)
-        {
+        if(Input.anyKeyDown)
             StartCoroutine(FadeOut(audio, 4f));
-        }
-	}
+    }
 
-    public static IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
+    void EndReached(UnityEngine.Video.VideoPlayer vp)
     {
-        float startVolume = audioSource.volume;
+        StartCoroutine(FadeOut(audio, 4f));
+    }
 
-        while (audioSource.volume > 0)
+    public IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
+    {
+        if(audioSource != null)
         {
-            audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
+            float startVolume = audioSource.volume;
 
-            yield return null;
+            while (audioSource.volume > 0)
+            {
+                audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
+
+                yield return null;
+            }
+
+            audioSource.Stop();
+            audioSource.volume = startVolume;
         }
-
-        audioSource.Stop();
-        audioSource.volume = startVolume;
-        GameObject.FindObjectOfType<SceneLoader>().LoadScene("Level1");
+        GameObject.FindObjectOfType<SceneLoader>().LoadScene(nextScene);
     }
 
     IEnumerator Fade()
